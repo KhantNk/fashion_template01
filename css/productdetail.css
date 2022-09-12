@@ -1,0 +1,123 @@
+.productdetail {
+  background-color: #FEE3D2;
+  height: 115px;
+}
+
+.productdetail .mv-txt {
+  padding: 23px 0;
+}
+
+.jacket .d-flex{
+  justify-content: unset;
+  align-items: flex-start;
+}
+
+.jacket-img img{
+  width: 425px;
+  height: 862px;
+  object-fit: cover;
+}
+
+.jacket-img ul li img {
+  width: 155px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.jacket-img ul.d-flex {
+  flex-direction: column;
+  gap: 13px;
+}
+
+.review-sec .tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.review .btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: unset;
+  color: #707070;
+}
+
+.btn:hover {
+  color: #000000;
+}
+
+.btn.active {
+  color: #000000;
+}
+
+.review .content.active {
+  padding: 2rem;
+  display: block;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.review .content {
+  display: none;
+}
+
+.review-rating .swiper{
+  height: 250px;
+}
+
+.review-rating .swiper-wrapper ul {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection-img img {
+  width: 263px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.collection-img .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.collection-img .hover:hover {
+  opacity: 1;
+}
+
+.collection .icon ul {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.collection-img .icon {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.collection-img .icon i {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.collection:hover .icon {
+  opacity: 1;
+  transform: translateY(-25px);
+  transition: 0.5s;
+}
+
+.collection .d-flex {
+  flex-wrap: nowrap;
+}

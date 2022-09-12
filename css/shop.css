@@ -1,0 +1,124 @@
+.shop{
+  background-color: #D3FDF3;
+  height: 115px;
+}
+
+.shop .mv-txt{
+  padding: 23px 0;
+}
+
+.tab {
+  width: 100%;
+  color: #2c3e50;
+  overflow: hidden;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+  display: none;
+}
+
+.admission input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-label::after {
+  content: "+";
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  transition: all 0.35s;
+}
+
+.tab-content {
+  max-height: 0;
+  padding: 0 1em em;
+  color: #2c3e50;
+  transition: all 0.35s;
+}
+
+input:checked~.tab-content {
+  max-height: 100vh;
+  padding: 30px;
+}
+
+input:checked~.tab-label::after {
+  content: '-';
+}
+
+.sidebar {
+  position: fixed;
+  left: -500px;
+  width: 400px;
+  height: 100%;
+  transition: all .5s ease;
+  background-color: #FFFFFF;
+  top: 0;
+  z-index: 1000;
+}
+
+#check {
+  display: none;
+}
+
+label #btn,
+label #cancel {
+  position: absolute;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  transition: all .5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  transition: all .5s ease;
+}
+
+#check:checked~.sidebar {
+  left: 0;
+}
+
+#check:checked~label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked~label #cancel {
+  left: 330px;
+}
+
+#check:checked~section {
+  margin-left: 250px;
+}
+
+.sidebar h4{
+  font-size: 20px;
+}
+
+.sidebar .row{
+  padding-top: 80px;
+  width: 340px;
+  margin: 0 auto;
+}

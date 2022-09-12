@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Hammer Fat';
+  src: url(../fonts/Hammer\ Fat.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Holland';
+  src: url(../fonts/Holland.ttf);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-size: 33px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: 'Hammer Fat';
+  font-size: 70px;
+  line-height: 1.5;
+  letter-spacing: 8px;
+}
+
+h3 {
+  font-family: 'Holland', sans-serif;
+  font-size: 60px;
+}
+
+h4 {
+  font-size: bold;
+  font-size: 50px;
+  line-height: 1.5;
+}
+
+h5 {
+  font-family: 'Nunito Sans',sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h6 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 1122px;
+  margin: 0 auto;
+}
+
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+i {
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 24px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background-color: #000000;
+}
+
+.bg {
+  font-weight: bold;
+  font-size: 110px;
+  opacity: 6%;
+  padding-top: 97px;
+  display: block;
+  top: 0;
+}

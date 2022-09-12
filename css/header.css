@@ -1,0 +1,38 @@
+header {
+  font-family: 'DM sans',sans-serif;
+  padding: 34px 0;
+}
+
+header ul li a{
+  color: #000000;
+}
+
+nav .d-flex {
+  gap: 53px;
+}
+
+.icon .d-flex {
+  gap: 41px;
+}
+
+.logo.d-flex {
+  gap: 61px;
+}
+
+.logo span {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 38px;
+}
+
+.ph-no a{
+  color: #000000;
+}
+
+.ph-no span a{
+  color: rgb(230, 76, 76, 100%);
+  display: flex;
+  justify-content: flex-end;
+  font-size: 8px;
+  line-height: 1.5;
+}
