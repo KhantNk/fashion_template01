@@ -36,3 +36,8 @@ nav .d-flex {
   font-size: 8px;
   line-height: 1.5;
 }
+
+header .active {
+  background-color: unset;
+  text-decoration: underline;
+}

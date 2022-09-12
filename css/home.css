@@ -91,7 +91,24 @@
 }
 
 .rainy-collection {
-  padding-top: 97px
+  padding: 100px 0;
+}
+
+.trending {
+  position: relative;
+}
+
+.trending-txt {
+  padding-bottom: 50px;
+}
+
+.trending .btn {
+  position: absolute;
+  bottom: 73px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .collection-img .d-flex {
@@ -197,11 +214,10 @@
   font-size: 40px;
 }
 
-.prev{
+.prev {
   right: 73px;
   border-radius: 3px 0 0 3px;
 }
-
 
 .next {
   right: 0;
@@ -259,6 +275,17 @@
   border-bottom: 1px solid #000000;
 }
 
+.new-arrival .arrival {
+  position: absolute;
+  top: 114px;
+  left: -174px;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 15px 20px;
+  transform: rotate(90deg);
+  letter-spacing: 10px;
+}
+
 .winter-img {
   position: relative;
   top: -52px;
@@ -292,6 +319,25 @@
 
 .latest-blog .d-flex {
   align-items: flex-start;
+}
+
+.latest-blog .fashion ul li:not(:first-child)::before {
+  content: '.';
+  padding: 0 10px;
+}
+
+.latest-blog .fashion ul li {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.latest-blog .fashion .d-flex {
+  gap: 0;
+}
+
+.latest-blog .img a {
+  color: #000000;
+  text-decoration: underline;
 }
 
 .blog p {

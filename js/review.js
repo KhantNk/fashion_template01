@@ -1,5 +1,6 @@
-let buttons = document.querySelectorAll("button");
-let sections = document.querySelectorAll(".content");
+const buttons = document.querySelectorAll("button");
+const sections = document.querySelectorAll(".content");
+
 
 buttons.forEach((btn)=>{
   btn.addEventListener("click", ()=>{

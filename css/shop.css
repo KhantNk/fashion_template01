@@ -122,3 +122,14 @@ label #cancel {
   width: 340px;
   margin: 0 auto;
 }
+
+.shop-filter{
+  padding: 80px 0;
+}
+
+label .d-flex{
+  gap: 15px;
+  border: 1px solid #000000;
+  padding: 9px 18px;
+}
+

@@ -52,7 +52,6 @@ p {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 2px;
 }
 
 .container {
@@ -64,7 +63,6 @@ p {
   width: 1122px;
   margin: 0 auto;
 }
-
 
 .d-flex {
   display: flex;
@@ -92,4 +90,19 @@ i {
   padding-top: 97px;
   display: block;
   top: 0;
+}
+.mv-txt ul li:not(:first-child)::before {
+  content: '/';
+  padding-right: 23px;
+}
+
+.mv-txt ul li a{
+    color: #000000;
+    font-size: 16px;
+}
+
+.mv-txt span{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 3.3;
 }

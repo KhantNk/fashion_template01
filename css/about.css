@@ -10,6 +10,20 @@
 .our-story{
   padding: 100px 0;
 }
+.aboutus h4{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.our-story p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.our-story .d-flex{
+  gap: 0;
+}
+
 .our-story .swiper{
   height: 250px;
 }
@@ -19,7 +33,7 @@
 }
 
 .our-story .customer .swiper-wrapper p{
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding: 57px 0;
 }
@@ -32,4 +46,39 @@
   text-align: center;
 }
 
-.about
+.customer p{
+  text-align: center;
+  line-height: 2;
+}
+
+.customer span{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 35px;
+}
+
+.team{
+  background-color: #FCFCFC;
+  padding: 110px 0;
+}
+
+.team .team-txt{
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.team .team-txt p{
+  font-size: 16px;
+  font-weight: 300;
+  padding: 37px 0;
+}
+.team-img img{
+  padding-bottom: 22px;
+}
+
+.team-img h6{
+  font-size: 20px;
+  line-height: 1.5;
+}
