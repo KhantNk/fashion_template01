@@ -1,8 +1,26 @@
 .blog-pg .blog-sec {
-  background-color: #D3FDF3;
+  background-color: #FEE3D2;
   height: 115px;
 }
 
 .blog-pg .blog-sec .mv-txt {
   padding: 23px 0;
+}
+
+.blog-pg .latest-sec{
+  background-color: #FFFFFF;
+}
+
+.blog-pg .latest-blog .d-flex{
+  flex-wrap: wrap;
+}
+
+.blog-pg .latest-blog .img{
+  flex: 1 1 30%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+  .blog-pg .latest-blog .img {
+    flex: 1 1 45%;
+  }
 }

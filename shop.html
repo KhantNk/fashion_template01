@@ -1,21 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
-      />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito+Sans&display=swap"
-      rel="stylesheet"
-      />
+    <link rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito+Sans&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
+    <div class="sidebar">
+      <label for="check" id="close-sidebar">
+        <i class="las la-times" id="cancel"></i>
+      </label>
+      <div class="row">
+        <div class="col">
+          <div class="tabs">
+            <div class="tab">
+              <input type="checkbox" id="chck2" />
+              <label class="tab-label step step" for="chck2">
+                <h4>#categories</h4>
+              </label>
+              <div class="tab-content">
+                <ul class="d-flex">
+                  <li>
+                    <input type="checkbox" id="Bags" name="Bags" value="Bags" />
+                    <label for="Bags"> Bags</label>
+                  </li>
+                  <li><input type="checkbox" id="Accessories" name="Accessories" value="Accessories" />
+                    <label for="Accessories"> Accessories</label></li>
+                  <li><input type="checkbox" id="Shirts" name="Shirts" value="Shirts" />
+                    <label for="Shirts"> Shirts</label></li>
+                  <li><input type="checkbox" id="Crop top" name="Crop top" value="Crop top" />
+                    <label for="Crop top"> Crop top</label></li>
+                  <li><input type="checkbox" id="Shoes" name="Shoes" value="Shoes" />
+                    <label for="Shoes"> Shoes</label></li>
+                  <li><input type="checkbox" id="Coats" name="Coats" value="Coats" />
+                    <label for="Coats"> Coats</label></li>
+                  <li><input type="checkbox" id="Pants" name="Pants" value="Pants" />
+                    <label for="Pants"> Pants</label></li>
+                  <li><input type="checkbox" id="Sneakers" name="Sneakers" value="Sneakers" />
+                    <label for="Sneakers"> Sneakers</label></li>
+                  <li><input type="checkbox" id="Dresses" name="Dresses" value="Dresses" />
+                    <label for="Dresses"> Dresses</label></li>
+                  <li><input type="checkbox" id="Jeans" name="Jeans" value="Jeans" />
+                    <label for="Jeans"> Jeans</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tabs">
+            <div class="tab">
+              <input type="checkbox" id="chck3" />
+              <label class="tab-label step step" for="chck3">
+                <h4>#color</h4>
+              </label>
+              <div class="tab-content">
+                <ul class="color d-flex">
+                  <li><span class="radio-circle red-circle"></span>
+                    <label for="red">Red</label></li>
+                  <li><span class="radio-circle yellow-circle"></span>
+                    <label for="yellow">Yellow</label></li>
+                  <li><span class="radio-circle black-circle"></span>
+                    <label for="black.jpg">Black</label></li>
+                  <li><span class="radio-circle green-circle"></span>
+                    <label for="green.jpg">Green</label></li>
+                  <li><span class="radio-circle grey-circle"></span>
+                    <label for="grey.jpg">Grey</label></li>
+                  <li><span class="radio-circle blue-circle"></span>
+                    <label for="blue.jpg">Blue</label></li>
+                  <li>
+                    <span class="radio-circle white-circle"></span>
+                    <label for="white.jpg">White</label></li>
+                  <li><span class="radio-circle pink-circle"></span>
+                    <label for="pink.jpg">Pink</label></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tabs">
+            <div class="tab">
+              <input type="checkbox" id="chck4" />
+              <label class="tab-label step step" for="chck4">
+                <h4>#size</h4>
+              </label>
+              <div class="tab-content">
+                <ul class="size">
+                  <li>XS</li>
+                  <li>S</li>
+                  <li>M</li>
+                  <li>L</li>
+                  <li>XL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tabs">
+            <div class="tab">
+              <input type="checkbox" id="chck5" />
+              <label class="tab-label step step" for="chck5">
+                <h4>#prize</h4>
+              </label>
+              <div class="tab-content"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="tabs">
+            <div class="tab">
+              <input type="checkbox" id="chck6" />
+              <label class="tab-label step step" for="chck6">
+                <h4>#sort by</h4>
+              </label>
+              <div class="tab-content">
+                <ul>
+                  <li>XS</li>
+                  <li>S</li>
+                  <li>M</li>
+                  <li>L</li>
+                  <li>XL</li>
+                  <li>XXl</li>
+                  <li>3XL</li>
+                  <li>4XL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SIDEBAR -->
     <div class="shop-pg">
       <header>
         <div class="container d-flex">
@@ -66,117 +190,13 @@
         <div class="container">
           <div class="d-flex">
             <div>
-              <input type="checkbox" id="check" />
-              <label for="check">
+              <label for="check" id="open-sidebar">
                 <div class="d-flex">
                   <i class="las la-filter" id="filter-btn"></i>
                   <span>FILTER</span>
                 </div>
-                <i class="las la-times" id="cancel"></i>
               </label>
-              <div class="sidebar">
-                <div class="row">
-                  <div class="col">
-                    <div class="tabs">
-                      <div class="tab">
-                        <input type="checkbox" id="chck2" />
-                        <label class="tab-label step step" for="chck2">
-                          <h4>#categories</h4>
-                        </label>
-                        <div class="tab-content">
-                          <ul>
-                            <li>Bags</li>
-                            <li>Accessories</li>
-                            <li>Shirts</li>
-                            <li>Crop top</li>
-                            <li>Shoes</li>
-                            <li>Coats</li>
-                            <li>Pants</li>
-                            <li>Sneakers</li>
-                            <li>Dresses</li>
-                            <li>Jeans</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="tabs">
-                      <div class="tab">
-                        <input type="checkbox" id="chck3" />
-                        <label class="tab-label step step" for="chck3">
-                          <h4>#color</h4>
-                        </label>
-                        <div class="tab-content">
-                          <ul>
-                            <li>Red</li>
-                            <li>Yellow</li>
-                            <li>Black</li>
-                            <li>Green</li>
-                            <li>Gray</li>
-                            <li>Blue</li>
-                            <li>White</li>
-                            <li>Pink</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="tabs">
-                      <div class="tab">
-                        <input type="checkbox" id="chck4" />
-                        <label class="tab-label step step" for="chck4">
-                          <h4>#size</h4>
-                        </label>
-                        <div class="tab-content">
-                          <ul class="d-flex">
-                            <li>XS</li>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                            <li>XL</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="tabs">
-                      <div class="tab">
-                        <input type="checkbox" id="chck5" />
-                        <label class="tab-label step step" for="chck4">
-                          <h4>#prize</h4>
-                        </label>
-                        <div class="tab-content">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="tabs">
-                      <div class="tab">
-                        <input type="checkbox" id="chck6" />
-                        <label class="tab-label step step" for="chck4">
-                          <h4>#sort by</h4>
-                        </label>
-                        <div class="tab-content">
-                          <ul>
-                            <li>XS</li>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                            <li>XL</li>
-                            <li>XXl</li>
-                            <li>3XL</li>
-                            <li>4XL</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
             <div>
               <span>Showing 1–12 of 27 results</span>
@@ -187,14 +207,10 @@
       <section class="collection-img">
         <div class="container">
           <div class="d-flex">
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/red_shirt.jpg" alt="red_shirt" />
-                <img
-                  class="hover"
-                  src="./img/related_img05.jpg"
-                  alt="related_img05"
-                  />
+                <img class="hover" src="./img/related_img05.jpg" alt="related_img05" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -204,16 +220,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/party.jpg" alt="red_shirt" />
-                <img
-                  class="hover"
-                  src="./img/related_img06.jpg"
-                  alt="related_img06"
-                  />
+                <img class="hover" src="./img/related_img06.jpg" alt="related_img06" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -223,9 +235,9 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/zen.jpg" alt="red_shirt" />
                 <img class="hover" src="./img/zen02.jpg" alt="zen02" />
@@ -238,16 +250,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/pinkcoat.jpg" alt="red_shirt" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -257,16 +265,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/pinkbag.jpg" alt="pinkbag" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -276,16 +280,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/chacoat.jpg" alt="chacoat" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -295,16 +295,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/jean-shirt.jpg" alt="jean-shirt" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -314,16 +310,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/pinkshoe.jpg" alt="pinkshoe" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -333,16 +325,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/peachcoat.jpg" alt="peachcoat" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -352,16 +340,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/blackbag.jpg" alt="blackbag" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -371,16 +355,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/jean.jpg" alt="jean" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -390,16 +370,12 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
-            <div>
+            <div class="shop-img">
               <div class="collection">
                 <img src="./img/bluebag.jpg" alt="bluebag" />
-                <img
-                  class="hover"
-                  src="./img/related_img04.jpg"
-                  alt="related_img04"
-                  />
+                <img class="hover" src="./img/related_img04.jpg" alt="related_img04" />
                 <div class="icon">
                   <ul class="d-flex">
                     <li><i class="las la-search"></i></li>
@@ -409,7 +385,7 @@
                 </div>
               </div>
               <p>Gucci Backpack</p>
-              <span>32000</span>
+              <span>32000MMK</span>
             </div>
           </div>
         </div>
@@ -417,52 +393,48 @@
       <footer>
         <div class="inner">
           <div class="footer-nav">
-            <div class="d-flex">
-              <div>
+            <div class="guide d-flex">
+              <div class="footer-div">
                 <div class="logo">
                   <h1><span>b</span> boutique</h1>
                 </div>
                 <ul class="address">
-                  <li>
-                    No.(214), 25th street, Mahar Bandula Road, Lathar Township,
-                  </li>
-                  <li>yourname@domain.com</li>
+                  <li> No.(214), 25th street, Mahar Bandula Road, Lathar Township,</li>
+                  <li> yourname@domain.com</li>
                   <li><a href="tel:(+95)9451236987">(+95) 9 258 369 147</a></li>
                 </ul>
               </div>
-              <div class="guide d-flex">
-                <div>
-                  <h6>About Boutique</h6>
-                  <ul>
-                    <li>About us</li>
-                    <li>Branches</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Condition</li>
-                    <li>My Account</li>
-                  </ul>
-                </div>
-                <div>
-                  <h6>Shop Guide</h6>
-                  <ul>
-                    <li>Payments</li>
-                    <li>Returns</li>
-                    <li>Gift Card</li>
-                    <li>Delivery</li>
-                  </ul>
-                </div>
-                <div class="subscribe">
-                  <h6>Subscribe To Our Newsletter</h6>
-                  <form action="#" class="d-flex">
-                    <input type="text" placeholder="Enter your email" />
-                    <i class="las la-envelope"></i>
-                  </form>
-                  <div class="d-flex">
-                    <i class="lab la-facebook-f"></i>
-                    <i class="lab la-instagram"></i>
-                    <i class="lab la-pinterest-p"></i>
-                    <i class="lab la-twitter"></i>
-                    <i class="lab la-linkedin-in"></i>
-                  </div>
+              <div class="footer-div">
+                <h6>About Boutique</h6>
+                <ul>
+                  <li>About us</li>
+                  <li>Branches</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms & Condition</li>
+                  <li>My Account</li>
+                </ul>
+              </div>
+              <div class="footer-div">
+                <h6>Shop Guide</h6>
+                <ul>
+                  <li>Payments</li>
+                  <li>Returns</li>
+                  <li>Gift Card</li>
+                  <li>Delivery</li>
+                </ul>
+              </div>
+              <div class="subscribe footer-div">
+                <h6>Subscribe To Our Newsletter</h6>
+                <form action="#" class="d-flex">
+                  <input type="text" placeholder="Enter your email">
+                  <i class="las la-envelope"></i>
+                </form>
+                <div class="d-flex">
+                  <i class="lab la-facebook-f"></i>
+                  <i class="lab la-instagram"></i>
+                  <i class="lab la-pinterest-p"></i>
+                  <i class="lab la-twitter"></i>
+                  <i class="lab la-linkedin-in"></i>
                 </div>
               </div>
             </div>
@@ -474,5 +446,15 @@
         </div>
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+      $('#open-sidebar').click(function (e) {
+        $('.sidebar').addClass('active');
+      });
+
+      $('#close-sidebar').click(function (e) {
+        $('.sidebar').removeClass('active');
+      });
+    </script>
   </body>
 </html>

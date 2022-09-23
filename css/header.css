@@ -1,9 +1,9 @@
 header {
-  font-family: 'DM sans',sans-serif;
+  font-family: 'DM sans', sans-serif;
   padding: 34px 0;
 }
 
-header ul li a{
+header ul li a {
   color: #000000;
 }
 
@@ -25,11 +25,11 @@ nav .d-flex {
   font-size: 38px;
 }
 
-.ph-no a{
+.ph-no a {
   color: #000000;
 }
 
-.ph-no span a{
+.ph-no span a {
   color: rgb(230, 76, 76, 100%);
   display: flex;
   justify-content: flex-end;
@@ -40,4 +40,33 @@ nav .d-flex {
 header .active {
   background-color: unset;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+  header {
+    padding: 34px 0;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .logo span {
+    font-size: 38px;
+  }
+
+  .ph-no span a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width:767.9px) {
+  header nav {
+    display: none;
+  }
+
+  .ph-no {
+    display: none;
+  }
 }

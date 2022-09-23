@@ -11,6 +11,7 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
+  position: relative;
 }
 
 h1 {
@@ -37,7 +38,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Nunito Sans',sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 50px;
   font-weight: 300;
 }
@@ -81,6 +82,7 @@ i {
   color: #FFFFFF;
   font-weight: bold;
   background-color: #000000;
+  margin-top: 46px;
 }
 
 .bg {
@@ -91,18 +93,125 @@ i {
   display: block;
   top: 0;
 }
+
 .mv-txt ul li:not(:first-child)::before {
   content: '/';
   padding-right: 23px;
 }
 
-.mv-txt ul li a{
-    color: #000000;
-    font-size: 16px;
+.mv-txt ul li a {
+  color: #000000;
+  font-size: 16px;
 }
 
-.mv-txt span{
+.mv-txt span {
   font-size: 25px;
   font-weight: 600;
   line-height: 3.3;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    width: 90%;
+  }
+
+  .inner {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4.297vw;
+  }
+
+  h2 {
+    font-size: 8.115vw;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h5 {
+    font-size: 30px;
+  }
+
+  h6 {
+    font-size: 2.083vw;
+  }
+
+  p {
+    font-size: 2.604vw;
+  }
+
+  i {
+    font-size: 2.344vw;
+  }
+
+  .d-flex {
+    gap: 20px;
+  }
+
+  .btn {
+    padding: 1.953vw 3.125vw;
+    margin-top: 20px;
+  }
+
+  .bg {
+    font-size: 14.323vw;
+    padding-top: 12.63vw;
+  }
+
+  .mv-txt ul li a {
+    font-size: 2.083vw;
+  }
+
+  .mv-txt span {
+    font-size: 3.255vw;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+
+  .inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+  .d-flex {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    padding: 1.953vw 3.125vw;
+    margin-top: 20px;
+  }
+
+  .bg {
+    font-size: 14.323vw;
+    padding-top: 12.63vw;
+  }
+
+  .mv-txt ul li a {
+    font-size: 2.083vw;
+  }
+
+  .mv-txt span {
+    font-size: 3.255vw;
+  }
+
+}
+
+
+@media (max-width: 631px) {
+  .d-flex {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }

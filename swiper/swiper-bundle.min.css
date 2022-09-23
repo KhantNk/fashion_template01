@@ -204,6 +204,7 @@
 :root {
   --swiper-navigation-size: 44px
 }
+
 .swiper {
   margin-left: auto;
   margin-right: auto;
@@ -730,4 +731,32 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical>.swiper-pagination-bullets {
+    top: 37%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 45%;
+    width: calc(var(--swiper-navigation-size)/ 3 * 15);
+  }
+
+}
+
+
+@media screen and (max-width:767.9px) {
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 45%;
+  width: calc(var(--swiper-navigation-size)/ 3 * 0);
+}
+
 }

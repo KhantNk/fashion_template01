@@ -126,7 +126,7 @@
               because
             </p>
           </div>
-          <div>
+          <div class="team-member">
             <div class="d-flex">
               <div class="team-img">
                 <img src="./img/yana.jpg" alt="yana">
@@ -155,8 +155,8 @@
       <footer>
         <div class="inner">
           <div class="footer-nav">
-            <div class="d-flex">
-              <div>
+            <div class="guide d-flex">
+              <div class="footer-div">
                 <div class="logo">
                   <h1><span>b</span> boutique</h1>
                 </div>
@@ -166,39 +166,37 @@
                   <li><a href="tel:(+95)9451236987">(+95) 9 258 369 147</a></li>
                 </ul>
               </div>
-              <div class="guide d-flex">
-                <div>
-                  <h6>About Boutique</h6>
-                  <ul>
-                    <li>About us</li>
-                    <li>Branches</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Condition</li>
-                    <li>My Account</li>
-                  </ul>
-                </div>
-                <div>
-                  <h6>Shop Guide</h6>
-                  <ul>
-                    <li>Payments</li>
-                    <li>Returns</li>
-                    <li>Gift Card</li>
-                    <li>Delivery</li>
-                  </ul>
-                </div>
-                <div class="subscribe">
-                  <h6>Subscribe To Our Newsletter</h6>
-                  <form action="#" class="d-flex">
-                    <input type="text" placeholder="Enter your email">
-                    <i class="las la-envelope"></i>
-                  </form>
-                  <div class="d-flex">
-                    <i class="lab la-facebook-f"></i>
-                    <i class="lab la-instagram"></i>
-                    <i class="lab la-pinterest-p"></i>
-                    <i class="lab la-twitter"></i>
-                    <i class="lab la-linkedin-in"></i>
-                  </div>
+              <div class="footer-div">
+                <h6>About Boutique</h6>
+                <ul>
+                  <li>About us</li>
+                  <li>Branches</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms & Condition</li>
+                  <li>My Account</li>
+                </ul>
+              </div>
+              <div class="footer-div">
+                <h6>Shop Guide</h6>
+                <ul>
+                  <li>Payments</li>
+                  <li>Returns</li>
+                  <li>Gift Card</li>
+                  <li>Delivery</li>
+                </ul>
+              </div>
+              <div class="subscribe footer-div">
+                <h6>Subscribe To Our Newsletter</h6>
+                <form action="#" class="d-flex">
+                  <input type="text" placeholder="Enter your email">
+                  <i class="las la-envelope"></i>
+                </form>
+                <div class="d-flex">
+                  <i class="lab la-facebook-f"></i>
+                  <i class="lab la-instagram"></i>
+                  <i class="lab la-pinterest-p"></i>
+                  <i class="lab la-twitter"></i>
+                  <i class="lab la-linkedin-in"></i>
                 </div>
               </div>
             </div>
@@ -211,7 +209,10 @@
       </footer>
     </div>
     <script src="swiper/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script>
+      let swiper = setSwiper('horizontal')
+    </script>
   </body>
 
 </html>

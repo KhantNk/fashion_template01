@@ -63,31 +63,33 @@
         </div>
       </section>
       <section class="contact-detail">
-        <div class="container">
-          <h4>#contact_detail</h4>
-          <p>
-            Contact is a 1997 American science fiction drama film directed by
-            Robert Zemeckis. It is a film adaptation of Carl Sagan's 1985 novel
-            of the same name; Sagan and his wife Ann Druyan wrote the story
-            outline for the film. Jodie Foster portrays the film's protagonist,
-            Dr. Eleanor "Ellie" Arroway, a SETI scientist who finds strong
-            evidence of extraterrestrial life and is chosen to make first
-            contact.
-          </p>
+        <div class="inner">
+          <div class="contact-txt">
+            <h4>#contact_detail</h4>
+            <p>
+              Contact is a 1997 American science fiction drama film directed by
+              Robert Zemeckis. It is a film adaptation of Carl Sagan's 1985 novel
+              of the same name; Sagan and his wife Ann Druyan wrote the story
+              outline for the film. Jodie Foster portrays the film's protagonist,
+              Dr. Eleanor "Ellie" Arroway, a SETI scientist who finds strong
+              evidence of extraterrestrial life and is chosen to make first
+              contact.
+            </p>
+          </div>
           <div class="d-flex">
             <div class="service">
-              <i class="las la-truck-moving"></i>
+              <i class="las la-phone-volume"></i>
               <p>(+95) 9 258 147 256</p>
             </div>
             <div class="service">
-              <i class="las la-headset"></i>
+              <i class="las la-map-marked-alt"></i>
               <p>
                 No.(214), 25th street, Mahar Bandula Road, Lathar Township,
                 Yangon, Myanmar
               </p>
             </div>
             <div class="service">
-              <i class="las la-redo-alt"></i>
+              <i class="las la-envelope"></i>
               <p>yourname@domain.com</p>
             </div>
           </div>
@@ -106,20 +108,7 @@
                   frameborder="0"
                   scrolling="no"
                   marginheight="0"
-                  marginwidth="0"></iframe><style>
-                .mapouter {
-                  position: relative;
-                  text-align: right;
-                  height: 800px;
-                  width: 700px;
-                }
-                .gmap_canvas {
-                  overflow: hidden;
-                  background: none !important;
-                  height: 800px;
-                  width: 700px;
-                }
-              </style>
+                  marginwidth="0"></iframe>
               </div>
             </div>
             <div class="message">
@@ -127,9 +116,26 @@
               <p>Get in Touch with Yourself is the third studio album by the British pop group Swing Out Sister. The
                 album
                 was released on Fontana Records in 1992 and was produced by Paul Staveley O'Duffy.</p>
+              <form class="review-form">
+                <ul>
+                  <li>
+                    <ul class="d-flex">
+                      <li>
+                        <input type="text" placeholder="Your Name*">
+                      </li>
+                      <li>
+                        <input type="text" placeholder="Your Email*">
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <textarea name="message" id="message" cols="20" rows="8" placeholder="Your Messages"></textarea>
+                  </li>
+                </ul>
+              </form>
               <a href="#" class="btn">SHOP NOW</a>
               <h4>#follow_us</h4>
-              <div class="d-flex">
+              <div class="icon">
                 <i class="lab la-facebook-f"></i>
                 <i class="lab la-instagram"></i>
                 <i class="lab la-pinterest-p"></i>
@@ -143,8 +149,8 @@
       <footer>
         <div class="inner">
           <div class="footer-nav">
-            <div class="d-flex">
-              <div>
+            <div class="guide d-flex">
+              <div class="footer-div">
                 <div class="logo">
                   <h1><span>b</span> boutique</h1>
                 </div>
@@ -154,39 +160,37 @@
                   <li><a href="tel:(+95)9451236987">(+95) 9 258 369 147</a></li>
                 </ul>
               </div>
-              <div class="guide d-flex">
-                <div>
-                  <h6>About Boutique</h6>
-                  <ul>
-                    <li>About us</li>
-                    <li>Branches</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Condition</li>
-                    <li>My Account</li>
-                  </ul>
-                </div>
-                <div>
-                  <h6>Shop Guide</h6>
-                  <ul>
-                    <li>Payments</li>
-                    <li>Returns</li>
-                    <li>Gift Card</li>
-                    <li>Delivery</li>
-                  </ul>
-                </div>
-                <div class="subscribe">
-                  <h6>Subscribe To Our Newsletter</h6>
-                  <form action="#" class="d-flex">
-                    <input type="text" placeholder="Enter your email">
-                    <i class="las la-envelope"></i>
-                  </form>
-                  <div class="d-flex">
-                    <i class="lab la-facebook-f"></i>
-                    <i class="lab la-instagram"></i>
-                    <i class="lab la-pinterest-p"></i>
-                    <i class="lab la-twitter"></i>
-                    <i class="lab la-linkedin-in"></i>
-                  </div>
+              <div class="footer-div">
+                <h6>About Boutique</h6>
+                <ul>
+                  <li>About us</li>
+                  <li>Branches</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms & Condition</li>
+                  <li>My Account</li>
+                </ul>
+              </div>
+              <div class="footer-div">
+                <h6>Shop Guide</h6>
+                <ul>
+                  <li>Payments</li>
+                  <li>Returns</li>
+                  <li>Gift Card</li>
+                  <li>Delivery</li>
+                </ul>
+              </div>
+              <div class="subscribe footer-div">
+                <h6>Subscribe To Our Newsletter</h6>
+                <form action="#" class="d-flex">
+                  <input type="text" placeholder="Enter your email">
+                  <i class="las la-envelope"></i>
+                </form>
+                <div class="d-flex">
+                  <i class="lab la-facebook-f"></i>
+                  <i class="lab la-instagram"></i>
+                  <i class="lab la-pinterest-p"></i>
+                  <i class="lab la-twitter"></i>
+                  <i class="lab la-linkedin-in"></i>
                 </div>
               </div>
             </div>

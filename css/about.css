@@ -1,4 +1,4 @@
-.about{
+.about {
   background: url(../img/about_bnr.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -7,78 +7,173 @@
   height: 650px;
 }
 
-.our-story{
+.our-story {
   padding: 100px 0;
 }
-.aboutus h4{
+
+.aboutus h4 {
   font-size: 40px;
   font-weight: bold;
 }
 
-.our-story p{
+.our-story p {
   font-size: 16px;
   font-weight: 300;
 }
 
-.our-story .d-flex{
+.our-story .story-txt {
+  width: 100%;
+}
+
+.our-story .story-img {
+  width: 100%;
+}
+
+.our-story .story-img img {
+  width: 100%;
+  height: auto;
+}
+
+.our-story .d-flex {
   gap: 0;
 }
 
-.our-story .swiper{
-  height: 250px;
-}
-.our-story .story-img img{
-  width: 672px;
-  height: 507px;
+.our-story .swiper {
+  height: auto;
 }
 
-.our-story .customer .swiper-wrapper p{
+.team span {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.our-story .customer .swiper-wrapper p {
   width: 40%;
   margin: 0 auto;
   padding: 57px 0;
 }
 
-.customer{
+.customer {
   padding-top: 80px;
 }
 
-.customer h4{
+.customer h4 {
   text-align: center;
 }
 
-.customer p{
+.customer p {
   text-align: center;
   line-height: 2;
 }
 
-.customer span{
+.customer span {
   display: block;
   font-size: 20px;
   font-weight: bold;
   padding-top: 35px;
 }
 
-.team{
+.team {
   background-color: #FCFCFC;
   padding: 110px 0;
 }
 
-.team .team-txt{
+.team .team-txt {
   width: 40%;
   text-align: center;
   margin: 0 auto;
 }
 
-.team .team-txt p{
+.team .team-txt p {
   font-size: 16px;
   font-weight: 300;
   padding: 37px 0;
 }
-.team-img img{
+
+.team-img img {
   padding-bottom: 22px;
 }
 
-.team-img h6{
+.team-img h6 {
   font-size: 20px;
   line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .our-story .story-txt {
+    width: 100%;
+  }
+
+  .our-story .story-img {
+    width: 100%;
+  }
+
+  .our-story .story-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .our-story .customer .swiper-wrapper p {
+    width: 50%;
+  }
+
+  .team .d-flex {
+    align-items: flex-start;
+  }
+
+  .team-img {
+    flex: 1 1 20%;
+  }
+
+  .team-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team .team-txt {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:767.9px) {
+  .about {
+    height: 400px;
+  }
+
+  .our-story {
+    padding: 100px 0;
+  }
+
+  .aboutus h4 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .our-story .customer .swiper-wrapper p {
+    width: 60%;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .team-member .d-flex {
+    flex-wrap: wrap;
+  }
+
+  .team-img {
+    flex: 1 1 45%;
+  }
+
+  .team-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team .team-txt {
+    width: 100%;
+  }
+
 }

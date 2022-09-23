@@ -8,11 +8,24 @@
 }
 
 .mv-txt {
-  padding-top: 160px;
+  padding: 160px 90px 0 90px;
 }
 
 .mv-txt .d-flex {
   justify-content: unset;
+}
+
+.mv-blk .d-flex {
+  padding-top: 122px;
+}
+
+.mv-txt .d-flex p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.mv-txt .d-flex i {
+  font-size: 18px;
 }
 
 .sale-sec {
@@ -46,6 +59,10 @@
 
 .sale-sec .sale .d-flex {
   flex-direction: column;
+}
+
+.sale-sec .sale img {
+  width: 100%;
 }
 
 .sale-sec .sale .d-flex .d-flex {
@@ -94,12 +111,16 @@
   padding: 100px 0;
 }
 
+.rainy-collection.d-flex {
+  align-items: flex-start;
+}
+
 .trending {
   position: relative;
 }
 
 .trending-txt {
-  padding-bottom: 50px;
+  padding: 46px 0 50px;
 }
 
 .trending .btn {
@@ -110,6 +131,7 @@
   background-color: #FFFFFF;
   color: #000000;
 }
+
 
 .collection-img .d-flex {
   flex-wrap: wrap;
@@ -127,7 +149,12 @@
 }
 
 .collection {
+  width: 100%;
   position: relative;
+}
+
+.collection span {
+  font-size: 16px;
 }
 
 .collection-img img {
@@ -179,16 +206,7 @@
 
 .trending img {
   width: 400px;
-}
-
-.winter-img {
-  width: 606px;
-  height: 800px;
-}
-
-.winter-img img {
-  width: 606px;
-  height: 800px;
+  height: 587px;
 }
 
 .mySlides {
@@ -271,14 +289,14 @@
       #FEE3D2 50%,
       #FFFFFF 50%,
       #FFFFFF 100%);
-  height: 1018px;
+  height: auto;
   border-bottom: 1px solid #000000;
 }
 
 .new-arrival .arrival {
   position: absolute;
-  top: 114px;
-  left: -174px;
+  top: 128px;
+  left: -178px;
   color: #FFFFFF;
   background-color: #000000;
   padding: 15px 20px;
@@ -289,6 +307,7 @@
 .winter-img {
   position: relative;
   top: -52px;
+  width: 606px;
 }
 
 .winter-news {
@@ -391,4 +410,293 @@
 .swiper {
   width: 100%;
   height: 650px;
+}
+
+.res {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .pc {
+    display: none;
+  }
+
+  .res {
+    display: block;
+  }
+
+  .mv-blk {
+    height: 500px;
+  }
+
+  .mv-txt {
+    padding: 60px 20px;
+  }
+
+  .mv-blk .d-flex {
+    padding-top: 20px;
+  }
+
+  .home-pg .mv-txt {
+    padding: 80px 20px;
+  }
+
+  .mv-txt .d-flex i {
+    font-size: 18px;
+  }
+
+  .mv-txt h3 {
+    font-size: 60px;
+  }
+
+  .sale-sec {
+    padding: 50px 0;
+  }
+
+  .sale-sec .sale img {
+    width: 100%;
+  }
+
+  .rainy-sec .trending img {
+    width: 31.426vw;
+    height: 50.278vw;
+  }
+
+  .rainy-collection {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  
+  .rainy-collection.d-flex{
+    flex-wrap: nowrap;
+  }
+
+  .collection {
+    flex: 1 1 45%;
+  }
+
+  .collection span {
+    font-size: 16px;
+  }
+
+  .collection .icon ul {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .collection-img .icon {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  .collection-img .icon i {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .collection:hover .icon {
+    opacity: 1;
+    transform: translateY(-25px);
+    transition: 0.5s;
+  }
+
+  .collection .d-flex {
+    flex-wrap: nowrap;
+  }
+
+  .collection .icon .d-flex {
+    gap: 18px;
+  }
+
+  .trending img {
+    width: 400px;
+  }
+
+  .winter-img {
+    width: 355px;
+  }
+
+  .winter-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .winter-news {
+    position: absolute;
+    top: 152px;
+    left: 250px;
+  }
+
+  .prev {
+    right: 12%;
+  }
+
+  .new-arrival {
+    background: linear-gradient(to bottom,
+        #FEE3D2 0%,
+        #FEE3D2 70%,
+        #FFFFFF 70%,
+        #FFFFFF 100%);
+    height: auto;
+    border-bottom: 1px solid #000000;
+  }
+
+  .new-arrival .arrival {
+    top: 133px;
+    left: -182px;
+    padding: 10px 20px;
+  }
+
+  .brand {
+    padding: 70px 0;
+  }
+
+  .latest-sec {
+    position: relative;
+    background-color: #EDF7F5;
+    padding: 112px 0;
+  }
+
+  .latest-sec .bg {
+    position: absolute;
+    padding: 52px 0;
+  }
+
+  .latest-blog {
+    font-family: 'DM SANS';
+    top: 112px;
+  }
+
+  .latest-blog .d-flex {
+    align-items: flex-start;
+  }
+
+  .latest-blog .fashion ul li:not(:first-child)::before {
+    content: '.';
+    padding: 0 5px;
+  }
+
+  .latest-blog .fashion ul li {
+    font-size: 10px;
+  }
+
+  .latest-blog .fashion .d-flex {
+    gap: 0;
+  }
+
+  .latest-blog .img {
+    width: 31%;
+  }
+
+  .latest-blog .img a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .img .d-flex {
+    gap: 0;
+  }
+
+  .blog p {
+    font-size: 10px;
+  }
+
+  .blog span {
+    font-size: 10px;
+  }
+
+  .blog-txt p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .blog-txt.img {
+    width: 100%;
+  }
+
+  .service-sec {
+    padding: 50px 0;
+  }
+
+  .service-sec .d-flex {
+    align-items: flex-start;
+  }
+
+  .service-sec i {
+    font-size: 50px;
+  }
+
+  .service {
+    text-align: center;
+    flex: 1 1 22%;
+  }
+
+  .service p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .service-sec h6 {
+    font-size: 14px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 650px;
+  }
+
+}
+
+@media screen and (max-width:767.9px) {
+  .mv-blk {
+    height: 400px;
+  }
+
+  .mv-blk .d-flex {
+    padding-top: 20px;
+  }
+
+  .home-pg .mv-txt {
+    padding: 50px 30px;
+  }
+
+  .sale-sec .sale {
+    gap: 19px;
+  }
+
+  .rainy-sec .trending {
+    width: 100%;
+  }
+
+  .rainy-sec .trending img {
+    width: 100%;
+    height: auto;
+  }
+
+  .collection {
+    width: 100%;
+  }
+
+  .winter-img {
+    width: 100%;
+  }
+
+  .winter-img img {
+    width: 100%;
+  }
+
+  .winter-news {
+    left: 0;
+    top: 20%;
+  }
+
+  .service {
+    flex: 1 1 45%;
+  }
+
 }

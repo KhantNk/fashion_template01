@@ -1,12 +1,110 @@
-.contactus{
-    background: url(../img/contact.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
+.contactus {
+  background: url(../img/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
 }
 
-.map .d-flex{
+.contactus .map .d-flex {
   align-items: flex-start;
+}
+
+.contact-detail {
+  padding: 64px 0;
+}
+
+.contact-detail .contact-txt {
+  text-align: center;
+}
+
+.contact-detail .contact-txt h4 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact-detail .contact-txt p {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 50px 0;
+}
+
+.contact-detail .service i {
+  font-size: 80px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+.message h4 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0.5;
+}
+
+.message input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #707070;
+  width: 100%;
+}
+
+.review-form .d-flex li {
+  flex: 1 1 45%;
+}
+
+.review-form .d-flex input {
+  padding-bottom: 14px;
+}
+
+.message p {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 40px 0;
+}
+
+.message .btn {
+  margin-bottom: 80px;
+}
+
+.message .icon {
+  display: flex;
+  justify-content: flex-start;
+  gap: 45px;
+}
+
+.message .icon i {
+  font-size: 29px;
+  color: #707070;
+  padding: 45px 0;
+}
+
+.message {
+  width: 50%;
+}
+
+@media (max-width: 1080px) {
+  .map .d-flex {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .mapouter {
+    width: 100%;
+  }
+
+  .message{
+    width: 100%;
+  }
+
+  .review-form .d-flex {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+
 }
