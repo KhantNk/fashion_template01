@@ -67,20 +67,16 @@
         <div class="container">
           <div class="d-flex">
             <div class="jacket-img">
-              <div class="d-flex">
-                <div class="d-flex">
-                  <ul class="d-flex">
-                    <li><img src="./img/red_shirt.jpg" alt="red_shirt"></li>
-                    <li><img src="./img/jacket01.jpg" alt="jacket"></li>
-                    <li><img src="./img/jacket02.jpg" alt="jacket"></li>
-                    <li><img src="./img/jacket03.jpg" alt="jacket"></li>
-                    <li><img src="./img/jacket04.jpg" alt="jacket"></li>
+                  <ul class="small-img">
+                    <li><img src="./img/red_shirt.jpg" onclick="myfuntion(this)" alt="red_shirt"></li>
+                    <li><img src="./img/jacket01.jpg" onclick="myfuntion(this)" alt="jacket"></li>
+                    <li><img src="./img/full.jpg" onclick="myfuntion(this)" alt="jacket"></li>
+                    <li><img src="./img/jacket03.jpg" onclick="myfuntion(this)" alt="jacket"></li>
+                    <li><img src="./img/jacket04.jpg" onclick="myfuntion(this)" alt="jacket"></li>
                   </ul>
-                  <div>
-                    <img src="./img/full.jpg" alt="jacket">
+                  <div class="full-img">
+                    <img id="imageBox" src="./img/full.jpg" alt="jacket">
                   </div>
-                </div>
-              </div>
             </div>
             <div class="jacket-detail">
               <div class="jacket-collar">
@@ -158,7 +154,118 @@
           </div>
         </div>
       </section>
-
+      <section class="review-sec">
+        <div class="inner">
+          <div class="review">
+            <div class="tabs">
+              <button class="button btn1 active" id="1">#description</button>
+              <button class="button btn2" id="2">#additional_information</button>
+              <button class="button btn3" id="3">#review_(3)</button>
+            </div>
+            <div class="sections">
+              <div class="content content1 active">
+                <p>Description logics (DL) are a family of formal knowledge representation languages. Many Dls are more
+                  expressive than propositional logic but less expressive than first-order logic in contrast to the
+                  latter, the core reasoning problems for Dls are (usually) decidable, and efficient decision procedures
+                  have been designed and implemented for these problems.There are
+                  general, spatial, temporal, spataitemporal, and fuzzy description logics,and each description logic
+                  deatures a different balance between expressive power and reasoning complexity by supporting different
+                  sets of mathematical constructors.Dls are used in artificial intelligence to describe and reason about
+                  the reievant concepts of an application domain (known as terminological knowledge).It is of particular
+                  importance in providing a logical formalism for Ontologies and the Semantic Web Ontology Language
+                  (OWL) and its profile is based on Dls. The most notable application of Dls and OWL is in biomedical
+                  informatics where DL assists in the codification od biomedical knowledge.</p>
+              </div>
+              <div class="content content2">
+                <p>WEIGHT 2 KG</p>
+                <p>
+                  <ul class="d-flex">
+                    <li>DISMENSION</li>
+                    <li>20 x 10 x 5 CM</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="content content3">
+                <div class="review-rating">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <ul>
+                          <li>
+                            <p>
+                              About Us is the debut studio album by Australian indie pop singer G Flip. The album was
+                              released on 30 August 2019. Prior to the album's release, the songs were described.
+                            </p>
+                          </li>
+                          <li>
+                            <h4>KENNETH R. MYERS</h4>
+                          </li>
+                          <li><img src="./img/rating.jpg" alt="rating"></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide">
+                        <ul>
+                          <li>
+                            <p>
+                              About Us is the debut studio album by Australian indie pop singer G Flip. The album was
+                              released on 30 August 2019. Prior to the album's release, the songs were described.
+                            </p>
+                          </li>
+                          <li>
+                            <h4>KENNETH R. MYERS</h4>
+                          </li>
+                          <li><img src="./img/rating.jpg" alt="rating"></li>
+                        </ul>
+                      </div>
+                      <div class="swiper-slide">
+                        <ul>
+                          <li>
+                            <p>
+                              About Us is the debut studio album by Australian indie pop singer G Flip. The album was
+                              released on 30 August 2019. Prior to the album's release, the songs were described.
+                            </p>
+                          </li>
+                          <li>
+                            <h4>KENNETH R. MYERS</h4>
+                          </li>
+                          <li><img src="./img/rating.jpg" alt="rating"></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <form class="review-form">
+                    <h4>Add review</h4>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <ul>
+                      <li class="d-flex">
+                        <label for="rating">Your Rating</label>
+                        <img src="./img/rate.jpg" alt="rate">
+                      </li>
+                      <li>
+                        <textarea name="review" id="" cols="30" rows="5" placeholder="Your Review"></textarea>
+                      </li>
+                      <li>
+                        <ul class="d-flex">
+                          <li>
+                            <input type="text" placeholder="Name*">
+                          </li>
+                          <li>
+                            <input type="text" placeholder="Email*">
+                          </li>
+                        </ul>
+                      </li>
+                      <p>Save my name, email, and website in this browser for the next time I comment.</p>
+                      <a href="#" class="btn">SUBMIT</a>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="related-product">
         <div class="container">
           <h4>
@@ -289,8 +396,9 @@
     <script src="swiper/swiper-bundle.min.js"></script>
     <script src="./js/review.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/productdetail.js"></script>
     <script>
-      let swiper = setSwiper('horizontal')
+      let swiper = setSwiper('horizontal');
     </script>
   </body>
 

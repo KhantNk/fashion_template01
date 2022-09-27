@@ -752,11 +752,17 @@ button.swiper-pagination-bullet {
 
 
 @media screen and (max-width:767.9px) {
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 45%;
-  width: calc(var(--swiper-navigation-size)/ 3 * 0);
-}
+
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical>.swiper-pagination-bullets {
+    top: 32%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 45%;
+    width: calc(var(--swiper-navigation-size)/ 3 * 1);
+  }
 
 }

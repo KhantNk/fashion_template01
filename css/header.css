@@ -70,3 +70,17 @@ header .active {
     display: none;
   }
 }
+
+@media screen and (max-width:410.9px) {
+  header .d-flex{
+    flex-wrap: nowrap;
+  }
+
+  header h1 img{
+    width: 100%;
+  }
+
+  .icon .d-flex{
+    gap: 20px;
+  }
+}

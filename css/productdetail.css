@@ -16,9 +16,14 @@
   align-items: flex-start;
 }
 
+.jacket-img {
+  display: flex;
+  gap: 13px;
+  width: 100%;
+}
+
 .jacket-img img {
   width: 425px;
-  height: 862px;
   object-fit: cover;
 }
 
@@ -28,10 +33,12 @@
   object-fit: cover;
 }
 
-.jacket-img ul.d-flex {
+.jacket-img .small-img {
+  display: flex;
   flex-direction: column;
   gap: 13px;
 }
+
 
 .review-sec .tabs {
   display: grid;
@@ -72,7 +79,7 @@
   width: calc(var(--swiper-navigation-size)/ 4 * 27);
 }
 
-.review .swiper-button-next{
+.review .swiper-button-next {
   top: 20%;
   width: calc(var(--swiper-navigation-size)/ 4 * 27);
 }
@@ -86,13 +93,13 @@
   margin: 0 auto;
 }
 
-.review-form h4{
+.review-form h4 {
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 35px;
 }
 
-.review-form li.d-flex{
+.review-form li.d-flex {
   flex-direction: column;
   align-items: flex-start;
   gap: 23px;
@@ -143,34 +150,35 @@
   flex-wrap: nowrap;
 }
 
-.jacket-collar .d-flex{
+.jacket-collar .d-flex {
   justify-content: space-between;
 }
 
-.jacket-detail h6{
+.jacket-detail h6 {
   font-size: 30px;
   font-weight: bold;
   padding-top: 37px;
 }
 
-.jacket-detail p{
+.jacket-detail p {
   font-size: 16px;
   font-weight: 200;
   padding: 58px 0;
   border-bottom: 1px solid #000000;
 }
 
-.jacket-detail .product h6,span{
+.jacket-detail .product h6,
+span {
   font-size: 20px;
   font-weight: bold;
   padding: 0;
 }
 
-.jacket-detail .product ul.d-flex{
+.jacket-detail .product ul.d-flex {
   align-items: center;
 }
 
-.product{
+.product {
   width: 64%;
   padding-top: 50px;
   border-bottom: 1px solid #000000;
@@ -181,18 +189,19 @@
   padding-left: 19px;
 }
 
-.product  .d-flex {
+.product .d-flex {
   padding-bottom: 40px;
 }
 
-.product .size,.color{
+.product .size,
+.color {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
 
-.product .size  li{
+.product .size li {
   border: 1px solid #000000;
   width: 50px;
   text-align: center;
@@ -210,54 +219,54 @@ textarea {
   flex: 1 1 45%;
 }
 
-.review-form ul li{
+.review-form ul li {
   padding: 23px 0;
 }
 
-.review-form .btn{
+.review-form .btn {
   margin-top: 46px;
 }
 
-.categories{
+.categories {
   padding-top: 50px;
 }
 
-.categories .d-flex{
+.categories .d-flex {
   padding-bottom: 25px;
 }
 
-.categories .d-flex  li{
+.categories .d-flex li {
   font-size: 16px;
   font-weight: 300;
 }
 
-.categories .d-flex li:first-child::after{
-    content: ':';
-    padding-left: 19px;
+.categories .d-flex li:first-child::after {
+  content: ':';
+  padding-left: 19px;
 }
 
-.review-sec p{
+.review-sec p {
   font-size: 16px;
   font-weight: 200;
 }
 
-.content .d-flex{
+.content .d-flex {
   justify-content: flex-start;
 }
 
-.swiper-slide ul li{
+.swiper-slide ul li {
   text-align: center;
 }
 
-.swiper-slide h4{
+.swiper-slide h4 {
   font-size: 20px;
   font-weight: bold;
 }
 
 .review-sec .swiper-slide p {
- padding-bottom: 37px;
- width: 91%;
- margin: 0 auto;
+  padding-bottom: 37px;
+  width: 91%;
+  margin: 0 auto;
 }
 
 .review .swiper-button-next {
@@ -268,15 +277,79 @@ textarea {
   top: 20%;
 }
 
-.related-product h4{
- font-size: 30px;
- font-weight: bold;
+.related-product h4 {
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.related-product .collection-img{
+.related-product .collection-img {
   padding: 56px 0;
 }
 
-.related-product span{
+.related-product span {
   font-size: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .review .content.active {
+    padding: 50px;
+  }
+
+  .jacket-img {
+    width: 100%;
+  }
+
+  .jacket-img img {
+    width: 100%;
+  }
+
+  .review .button {
+    font-size: 20px;
+  }
+
+  .review-rating .swiper {
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width:767.9px) {
+  .review .content.active {
+    padding: 30px;
+  }
+
+  .jacket-img {
+    width: 100%;
+  }
+
+  .jacket-img ul li img {
+    width: 100%;
+  }
+
+  .jacket-img img {
+    width: 100%;
+  }
+
+  .review-sec .inner {
+    width: 100%;
+  }
+
+  .review .button {
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .review-rating .swiper {
+    height: auto;
+  }
+
+  .review .swiper-button-next {
+    top: 20%;
+    width: calc(var(--swiper-navigation-size)/ 4 * 8);
+  }
+
+  .review .swiper-button-prev {
+    top: 20%;
+    width: calc(var(--swiper-navigation-size)/ 4 * 8);
+  }
 }

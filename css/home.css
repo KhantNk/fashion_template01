@@ -79,6 +79,7 @@
 }
 
 .season-end span {
+  display: inline-block;
   color: #FFFFFF;
   background-color: #AFD0F1;
   padding: 5px 15px;
@@ -148,9 +149,8 @@
   font-weight: bold;
 }
 
-.collection {
+.collection-img {
   width: 100%;
-  position: relative;
 }
 
 .collection span {
@@ -354,6 +354,10 @@
   gap: 0;
 }
 
+.latest-blog .img {
+  width: 100%;
+}
+
 .latest-blog .img a {
   color: #000000;
   text-decoration: underline;
@@ -466,8 +470,8 @@
     padding-top: 100px;
     padding-bottom: 0;
   }
-  
-  .rainy-collection.d-flex{
+
+  .rainy-collection.d-flex {
     flex-wrap: nowrap;
   }
 
@@ -653,6 +657,14 @@
 }
 
 @media screen and (max-width:767.9px) {
+  .pc {
+    display: none;
+  }
+
+  .res {
+    display: block;
+  }
+
   .mv-blk {
     height: 400px;
   }
@@ -662,11 +674,19 @@
   }
 
   .home-pg .mv-txt {
-    padding: 50px 30px;
+    padding: 80px 20px;
   }
 
   .sale-sec .sale {
     gap: 19px;
+  }
+
+  .season-end-txt {
+    padding: 39px;
+  }
+
+  .sale-item span {
+    font-size: 10px;
   }
 
   .rainy-sec .trending {
@@ -679,6 +699,10 @@
   }
 
   .collection {
+    width: 100%;
+  }
+
+  .collection-img img {
     width: 100%;
   }
 
@@ -700,3 +724,5 @@
   }
 
 }
+
+@media screen and (max-width:410.9px) {}

@@ -147,7 +147,7 @@
   }
 
   .aboutus h4 {
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
   }
 
@@ -161,6 +161,7 @@
 
   .team-member .d-flex {
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .team-img {
